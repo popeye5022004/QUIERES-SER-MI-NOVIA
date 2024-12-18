@@ -1,0 +1,106 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+}
+
+/* Animación de fondo */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background: #ffffffdd;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px;
+    animation: fadeIn 2s ease;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6f91;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Diseño y espaciado de botones */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 30px; /* Espaciado uniforme */
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: relative;
+}
+
+/* Botón "Sí" */
+#yes-button {
+    background: #ff85a2;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 133, 162, 0.5);
+}
+
+#yes-button:hover {
+    background: #ff3e73;
+    transform: scale(1.1);
+}
+
+/* Botón "No" */
+#no-button {
+    background: #ffc7c7;
+    color: white;
+}
+
+#no-button:hover {
+    background: #ff4c4c;
+    transform: scale(1.1);
+}
+
+/* Mensaje de respuesta */
+#message {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
